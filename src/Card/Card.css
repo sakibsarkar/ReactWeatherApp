@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+.container {
+    width: 533px;
+    height: 748px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 45px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background: linear-gradient(rgb(255 255 255 / 31%), rgb(246 246 246 / 40%));
+
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 33px 0 33px;
+}
+
+.top p{
+    font-size: 20px;
+}
+.temp{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.celcius{
+    font-size: 187px;
+    line-height: 161px;
+}
+
+.celcius sup{
+    font-size: 50px;
+}
+
+.city{
+    font-size: 36px;
+}

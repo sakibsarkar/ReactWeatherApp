@@ -1,13 +1,17 @@
 import "./App.css";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import { useState } from "react";
+import Card from "./Card/Card";
+import Header from "./Header/Header";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(()=>{
+    fetch("https://api.openweathermap.org/data/2.5/weather?q={city%20name}&appid={API%20key}")
+  },[])
 
   return (
     <>
-     
+    <Header></Header>
+     <Card></Card>
     </>
   )
 }

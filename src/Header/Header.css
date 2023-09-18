@@ -1,0 +1,12 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    padding: 0 37px;
+}
+
+.author img{
+    width: 40px;
+    border-radius: 50%;
+}
