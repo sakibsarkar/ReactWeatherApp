@@ -15,6 +15,12 @@ function App() {
 
   }, [])
 
+  const myCityWather = (city)=>{
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=4af0a8ed4d6e6271c0d441d472d939c4`)
+      .then(res => res.json())
+      .then(data => setWeatherData(data))
+  }
+
 
   return (
     <>

@@ -1,9 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
+    background-color: transparent;
     padding: 0 37px;
+}
+
+nav h2{
+    font-family: 'Acme', sans-serif;
+    font-size: 44px;
+    color: #d4f9ff;
+}
+
+.searchBox{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.searchIcon{
+    color: #d4f9ff;
+    font-size: 20px;
+}
+.searchBox input::placeholder{
+    color: rgba(255, 255, 255, 0.574);
+    font-style: italic;
+}
+.searchBox input{
+    outline: none;
+    border: none;
+    width: 340px;
+    border-bottom: 3px solid white;
+    font-size: 20px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.726);
+    
 }
 
 .author img{

@@ -13,15 +13,15 @@ const Card = ({ weatherData }) => {
     return (
         <div className="container">
             <div className="top">
-                <div className="left"><p className="icon-center"><BsSpeedometer2></BsSpeedometer2>{main?.pressure}hPa</p></div>
-                <div className="mid"><p className="icon-center"><FiWind></FiWind>{wind?.speed} km/h</p></div>
-                <div className="right"><p className="icon-center"><BsDropletHalf></BsDropletHalf>{main?.humidity}%</p></div>
+                <div className="left"><p className="icon-center"><BsSpeedometer2></BsSpeedometer2>{main? main.pressure : 0}hPa</p></div>
+                <div className="mid"><p className="icon-center"><FiWind></FiWind>{wind?wind.speed:0} km/h</p></div>
+                <div className="right"><p className="icon-center"><BsDropletHalf></BsDropletHalf>{main? main.humidity : 0}%</p></div>
             </div>
 
             <div className="temp">
                 <div className="flex-container">
                     <BsThermometerHalf className="thermoMeter"></BsThermometerHalf>
-                    <p className="celcius">{tempInCelCius(main?.temp)}<sup>&#176;C</sup></p>
+                    <p className="celcius">{tempInCelCius(main? main.temp : 273)}<sup>&#176;C</sup></p>
                 </div>
                 <div className="hero-box">
                     <div>
@@ -29,8 +29,8 @@ const Card = ({ weatherData }) => {
                         <p className="city">{name}</p>
                     </div>
                     <div className="min-max">
-                        <p><BsArrowUp></BsArrowUp> Max temp-{tempInCelCius(main?.temp_max)}<sup>c</sup></p>
-                        <p><BsArrowDown></BsArrowDown> Min temp-{tempInCelCius(main?.temp_min)}<sup>c</sup></p>
+                        <p><BsArrowUp></BsArrowUp> Max temp - {tempInCelCius(main?main.temp_max: 273)}<sup>c</sup></p>
+                        <p><BsArrowDown></BsArrowDown> Min temp - {tempInCelCius(main? main.temp_min : 273)}<sup>c</sup></p>
                     </div>
 
                 </div>
@@ -44,6 +44,9 @@ const Card = ({ weatherData }) => {
 
                 </div>
             </div>
+           <div className="wave">
+          <img src="https://i.ibb.co/Yb5nyg3/wave.png" alt="" />
+           </div>
         </div>
     );
 };
