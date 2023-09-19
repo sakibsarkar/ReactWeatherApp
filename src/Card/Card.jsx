@@ -5,6 +5,7 @@ import { TbWorldLatitude, TbWorldLongitude } from "react-icons/tb";
 import { tempInCelCius } from "./converter/convert";
 
 const Card = ({ weatherData }) => {
+
     const { main, wind, coord, name, sys } = weatherData
 
     // C = K – 273.15

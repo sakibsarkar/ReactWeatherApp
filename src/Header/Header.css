@@ -21,8 +21,11 @@ nav h2{
     gap: 16px;
 }
 .searchIcon{
-    color: #d4f9ff;
+    color: #ffffff;
     font-size: 20px;
+    background: #f1f1f17a;
+    padding: 5px 20px;
+    border-radius: 19px;
 }
 .searchBox input::placeholder{
     color: rgba(255, 255, 255, 0.574);
