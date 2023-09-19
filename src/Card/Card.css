@@ -2,13 +2,14 @@
 
 .container {
     width: 533px;
-    height: 748px;
+    height: 588px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 45px;
     font-family: 'Inter', sans-serif;
     color: white;
     background: linear-gradient(rgb(255 255 255 / 31%), rgb(246 246 246 / 40%));
+    margin: auto;
 
 }
 
@@ -23,11 +24,12 @@
     font-size: 20px;
 }
 .temp{
-    height: 50%;
+    height: 75%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    flex-direction: column;
 }
 .celcius{
     font-size: 187px;
@@ -40,4 +42,42 @@
 
 .city{
     font-size: 36px;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.thermoMeter{
+    font-size: 130px;
+    opacity: 0.7;
+}
+
+.min-max{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    opacity: 0.7;
+}
+
+.hero-box{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 46px;
+}
+
+.icon-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.bottom div{
+    display: flex;
+    justify-content: space-around;
 }
