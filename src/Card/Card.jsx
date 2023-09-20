@@ -1,5 +1,5 @@
 import "./Card.css";
-import { BsArrowDown, BsArrowUp, BsDropletHalf, BsFileArrowDown, BsSpeedometer2, BsThermometerHalf } from "react-icons/bs";
+import { BsArrowDown, BsArrowUp, BsDropletHalf, BsSpeedometer2, BsThermometerHalf } from "react-icons/bs";
 import { FiWind } from "react-icons/fi";
 import { TbWorldLatitude, TbWorldLongitude } from "react-icons/tb";
 import { tempInCelCius } from "./../converter/convert";
