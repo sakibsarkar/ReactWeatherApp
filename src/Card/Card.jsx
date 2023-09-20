@@ -7,7 +7,7 @@ import { tempInCelCius, tempInFahrenheit } from "./../converter/convert";
 
 const Card = ({ weatherData }) => {
 
-   
+
     const { main, wind, coord, name, sys } = weatherData
 
     // C = K – 273.15
@@ -51,17 +51,16 @@ const Card = ({ weatherData }) => {
 
             </div>
             <div className="wave">
-                {/* <img src="https://i.ibb.co/T0fHmrp/wave-1.png" alt="" /> */}
                 <Wave fill="url(#gradient)" options={{
                     height: 20,
-                    amplitude:40,
+                    amplitude: 40,
                     speed: 0.3,
                     points: 3
                 }}>
                     <defs>
-                        <linearGradient id="gradient" gradientTransform="rotate(90)">
-                            <stop offset="10%" stopColor="#1566fe" />
-                            <stop offset="90%" stopColor="#833ef3" />
+                        <linearGradient id="gradient" gradientTransform="rotate(100)">
+                            <stop offset="10%" stopColor="#3ED4F3" />
+                            <stop offset="90%" stopColor="#1915FE" />
                         </linearGradient>
                     </defs>
                 </Wave>
