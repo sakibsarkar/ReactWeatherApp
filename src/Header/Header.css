@@ -6,7 +6,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    padding: 0 37px;
+    padding: 17px 37px;
 }
 
 nav h2{
@@ -42,7 +42,14 @@ nav h2{
     
 }
 
+.author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .author img{
-    width: 40px;
+    width: 45px;
     border-radius: 50%;
 }
