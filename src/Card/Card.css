@@ -3,7 +3,7 @@
 .container {
     position: relative;
     width: 533px;
-    height: 588px;
+    height: 610px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 45px;
@@ -15,17 +15,18 @@
 
 }
 
-.top{
+.top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 31px 33px 0 33px;
 }
 
-.top p{
+.top p {
     font-size: 20px;
 }
-.temp{
+
+.temp {
     height: 75%;
     display: flex;
     justify-content: center;
@@ -33,44 +34,49 @@
     gap: 30px;
     flex-direction: column;
 }
-.celcius{
+
+.celcius {
     font-size: 187px;
     line-height: 161px;
 }
 
-.celcius sup{
+.celcius sup {
     font-size: 50px;
 }
-.fahrenheit{
+
+.fahrenheit {
     position: absolute;
     right: -17px;
     font-size: 27px;
     bottom: 17px;
     opacity: 0.7;
 }
-.city{
+
+.city {
     font-size: 36px;
+
 }
 
-.flex-container{
+.flex-container {
     position: relative;
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.thermoMeter{
+
+.thermoMeter {
     font-size: 130px;
     opacity: 0.7;
 }
 
-.min-max{
+.min-max {
     display: flex;
     flex-direction: column;
     gap: 6px;
     opacity: 0.7;
 }
 
-.hero-box{
+.hero-box {
     display: flex;
     /* flex-direction: column; */
     align-items: center;
@@ -79,25 +85,23 @@
     gap: 46px;
 }
 
-.icon-center{
+.icon-center {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6px;
 }
 
-.bottom div{
+.bottom div {
     display: flex;
     justify-content: space-around;
 }
 
-.wave{
+.wave {
     position: relative;
-    bottom: 109px;
+    bottom: 73px;
     overflow: hidden;
     z-index: -1;
     width: 100%;
-}
-.wave img{
-    width: 100%;
+
 }

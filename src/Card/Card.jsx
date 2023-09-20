@@ -1,4 +1,5 @@
 import "./Card.css";
+import Wave from "react-wavify";
 import { BsArrowDown, BsArrowUp, BsDropletHalf, BsSpeedometer2, BsThermometerHalf } from "react-icons/bs";
 import { FiWind } from "react-icons/fi";
 import { TbWorldLatitude, TbWorldLongitude } from "react-icons/tb";
@@ -6,6 +7,7 @@ import { tempInCelCius, tempInFahrenheit } from "./../converter/convert";
 
 const Card = ({ weatherData }) => {
 
+   
     const { main, wind, coord, name, sys } = weatherData
 
     // C = K – 273.15
@@ -13,7 +15,7 @@ const Card = ({ weatherData }) => {
 
     return (
         <div className="container">
-           
+
             <div className="top">
                 <div className="left" title="Atmosphere pressure"><p className="icon-center"><BsSpeedometer2></BsSpeedometer2>{main ? main.pressure : 0}hPa</p></div>
                 <div className="mid" title="Wind Speed"><p className="icon-center"><FiWind></FiWind>{wind ? wind.speed : 0} km/h</p></div>
@@ -46,11 +48,24 @@ const Card = ({ weatherData }) => {
                     <p className="icon-center"><TbWorldLatitude></TbWorldLatitude> Latitude - {coord?.lat}</p>
 
                 </div>
-               
+
             </div>
             <div className="wave">
-                <img src="https://i.ibb.co/Yb5nyg3/wave.png" alt="" />
-                
+                {/* <img src="https://i.ibb.co/T0fHmrp/wave-1.png" alt="" /> */}
+                <Wave fill="url(#gradient)" options={{
+                    height: 20,
+                    amplitude:40,
+                    speed: 0.3,
+                    points: 3
+                }}>
+                    <defs>
+                        <linearGradient id="gradient" gradientTransform="rotate(90)">
+                            <stop offset="10%" stopColor="#1566fe" />
+                            <stop offset="90%" stopColor="#833ef3" />
+                        </linearGradient>
+                    </defs>
+                </Wave>
+
 
             </div>
         </div>
