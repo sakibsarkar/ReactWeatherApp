@@ -41,12 +41,19 @@
 .celcius sup{
     font-size: 50px;
 }
-
+.fahrenheit{
+    position: absolute;
+    right: -17px;
+    font-size: 27px;
+    bottom: 17px;
+    opacity: 0.7;
+}
 .city{
     font-size: 36px;
 }
 
 .flex-container{
+    position: relative;
     display: flex;
     align-items: center;
     gap: 20px;

@@ -34,16 +34,17 @@ function App() {
                 padding: '16px',
                 color: 'black',
                 backdropFilter: "blur(5px)",
-                borderRadius:" 10px",
+                borderRadius: " 10px",
                 fontFamily: 'Inter',
-                color:"#fff",
+                color: "#fff",
                 background: "linear-gradient(rgba(255, 255, 255, 0.141), rgba(137, 137, 137, 0.313))"
-                
+
               },
               iconTheme: {
                 primary: '#db6f6f',
                 secondary: '#FFFAEE',
               },
+              duration: 2000,
             });
           }
 
@@ -71,16 +72,19 @@ function App() {
                 padding: '16px',
                 color: 'black',
                 backdropFilter: "blur(5px)",
-                borderRadius:" 10px",
+                borderRadius: " 10px",
                 fontFamily: 'Inter',
-                color:"#fff",
+                color: "#fff",
                 background: "linear-gradient(rgba(255, 255, 255, 0.141), rgba(137, 137, 137, 0.313))"
-                
+
               },
               iconTheme: {
                 primary: '#db6f6f',
                 secondary: '#FFFAEE',
               },
+
+              duration: 2000,
+
             });
           }
 

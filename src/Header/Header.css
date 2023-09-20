@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-
-nav{
+nav{ 
+    font-family: 'Acme', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +10,7 @@ nav{
 }
 
 nav h2{
-    font-family: 'Acme', sans-serif;
+    
     font-size: 44px;
     color: #d4f9ff;
 }
@@ -42,14 +42,24 @@ nav h2{
     
 }
 
+.corner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 252px;
+    gap: 20px;
+}
 .author{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-
-.author img{
+.time p{
+    font-size: 25px;
+    color: white;
+}
+.corner img{
     width: 45px;
     border-radius: 50%;
 }
