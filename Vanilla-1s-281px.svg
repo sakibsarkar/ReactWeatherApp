@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="281" height="418" preserveAspectRatio="xMidYMid">
+<style type="text/css">
+  text {
+    text-anchor: middle; font-size: 156px; opacity: 0;
+  }
+</style>
+<g style="transform-origin: 140.5px 209px; transform: scale(1.625);">
+<g transform="translate(140.5,209)">
+  <g transform="translate(0,0)"><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: -22.225px 22.6311px; animation: 1s linear -0.44s infinite normal forwards running bounce-bb667a5b-5a8d-4036-902b-d0d5368e3bd0;"><path d="M5.95-5.66L5.95-5.66L5.95-5.66Q5.95-7.97 7.58-9.65L7.58-9.65L7.58-9.65Q9.22-11.33 11.62-11.33L11.62-11.33L11.62-11.33Q14.11-11.33 15.84-9.65L15.84-9.65L15.84-9.65Q17.57-7.97 17.57-5.66L17.57-5.66L17.57-5.66Q17.57-3.26 15.84-1.63L15.84-1.63L15.84-1.63Q14.11 0 11.62 0L11.62 0L11.62 0Q9.22 0 7.58-1.63L7.58-1.63L7.58-1.63Q5.95-3.26 5.95-5.66" fill="#ff5000" stroke="none" stroke-width="none" transform="translate(-33.985015869140625,28.29606658935547)" style="fill: rgb(255, 80, 0);"></path></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: -22.225px -9.52893px; animation: 1s linear -0.22s infinite normal forwards running bounce-bb667a5b-5a8d-4036-902b-d0d5368e3bd0;"><path d="M5.95-37.82L5.95-37.82L5.95-37.82Q5.95-40.13 7.58-41.81L7.58-41.81L7.58-41.81Q9.22-43.49 11.62-43.49L11.62-43.49L11.62-43.49Q14.11-43.49 15.84-41.81L15.84-41.81L15.84-41.81Q17.57-40.13 17.57-37.82L17.57-37.82L17.57-37.82Q17.57-35.42 15.84-33.79L15.84-33.79L15.84-33.79Q14.11-32.16 11.62-32.16L11.62-32.16L11.62-32.16Q9.22-32.16 7.58-33.79L7.58-33.79L7.58-33.79Q5.95-35.42 5.95-37.82" fill="#ff5000" stroke="none" stroke-width="none" transform="translate(-33.985015869140625,28.29606658935547)" style="fill: rgb(255, 80, 0);"></path></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 26.4px 2.47107px; animation: 1s linear 0s infinite normal forwards running bounce-bb667a5b-5a8d-4036-902b-d0d5368e3bd0;"><path d="M51.46 25.15L46.85 20.74L46.85 20.74Q52.42 15.17 55.92 9.26L55.92 9.26L55.92 9.26Q59.42 3.36 61.44-2.64L61.44-2.64L61.44-2.64Q63.46-8.64 64.18-14.50L64.18-14.50L64.18-14.50Q64.90-20.35 64.90-25.92L64.90-25.92L64.90-25.92Q64.90-31.49 64.18-37.34L64.18-37.34L64.18-37.34Q63.46-43.20 61.44-49.15L61.44-49.15L61.44-49.15Q59.42-55.10 55.92-61.01L55.92-61.01L55.92-61.01Q52.42-66.91 46.85-72.38L46.85-72.38L51.46-76.80L51.46-76.80Q55.78-73.34 59.81-68.74L59.81-68.74L59.81-68.74Q63.84-64.13 66.96-57.98L66.96-57.98L66.96-57.98Q70.08-51.84 72-43.97L72-43.97L72-43.97Q73.92-36.10 73.92-26.02L73.92-26.02L73.92-26.02Q73.92-15.94 72-8.02L72-8.02L72-8.02Q70.08-0.10 66.96 6.10L66.96 6.10L66.96 6.10Q63.84 12.29 59.81 16.99L59.81 16.99L59.81 16.99Q55.78 21.70 51.46 25.15L51.46 25.15" fill="#ff5000" stroke="none" stroke-width="none" transform="translate(-33.985015869140625,28.29606658935547)" style="fill: rgb(255, 80, 0);"></path></g></g>
+</g>
+</g>
+<style id="bounce-bb667a5b-5a8d-4036-902b-d0d5368e3bd0" data-anikit="">@keyframes bounce-bb667a5b-5a8d-4036-902b-d0d5368e3bd0
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.1361,0.2514,0.2175,0.8786);
+    transform: translate(0,0px) scaleY(1);
+  }
+  37% {
+    animation-timing-function: cubic-bezier(0.7674,0.1844,0.8382,0.7157);
+    transform: translate(0,-39.96px) scaleY(1);
+  }
+  72% {
+    animation-timing-function: cubic-bezier(0.1118,0.2149,0.2172,0.941);
+    transform: translate(0,0px) scaleY(1);
+  }
+  87% {
+    animation-timing-function: cubic-bezier(0.7494,0.2259,0.8209,0.6963);
+    transform: translate(0,19.900000000000002px) scaleY(0.602);
+  }
+  100% {
+    transform: translate(0,0px) scaleY(1);
+  }
+}</style></svg>

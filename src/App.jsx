@@ -8,11 +8,18 @@ import { FiSearch } from "react-icons/fi";
 function App() {
   const [weatherData, setWeatherData] = useState({})
   const [cityName, setCityName] = useState("")
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
+    setLoading(true)
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=dhaka&appid=4af0a8ed4d6e6271c0d441d472d939c4`)
       .then(res => res.json())
-      .then(data => setWeatherData(data))
+      .then(data =>{
+        setLoading(false)
+        setWeatherData(data)
+      
+      })
+
 
 
 
@@ -23,11 +30,12 @@ function App() {
   const myCityWather = (x, city) => {
     // showing the city info that has been given by button clicked a--- 
     if (!city) {
-
+      setLoading(true)
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=4af0a8ed4d6e6271c0d441d472d939c4`)
         .then(res => res.json())
         .then(data => {
           if (data.cod == 404) {
+            setLoading(false)
             toast.error('No city data available on this name !', {
               style: {
                 // border: '1px solid rgba(0, 65, 255, 1)',
@@ -49,7 +57,8 @@ function App() {
           }
 
           else {
-            setWeatherData(data)
+            setLoading(false)
+        setWeatherData(data)
           }
         }
 
@@ -62,10 +71,13 @@ function App() {
     // showing the city info that has been given by key-board enter clicked
 
     else {
+      setLoading(true)
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=4af0a8ed4d6e6271c0d441d472d939c4`)
         .then(res => res.json())
         .then(data => {
+          
           if (data.cod == 404) {
+            setLoading(false)
             toast.error('No city data available on this name !', {
               style: {
                 // border: '1px solid rgba(0, 65, 255, 1)',
@@ -84,12 +96,13 @@ function App() {
               },
 
               duration: 2000,
-
+              
             });
           }
 
           else {
-            setWeatherData(data)
+            setLoading(false)
+        setWeatherData(data)
           }
         })
     }
@@ -119,14 +132,19 @@ function App() {
       <Header myCityWather={myCityWather} HandleChange={HandleChange}></Header>
 
       <div className="parent">
-        <div className="searchBox " id="mobileSearch">
+        <div className={loading ? "hide" : "searchBox"} id={loading ? "blah" : "mobileSearch"}>
           <input type="text" id="search" placeholder="seatch your city" onKeyUp={HandleChange} />
 
           <div className="searchIcon" onClick={myCityWather}>
             <FiSearch></FiSearch>
           </div>
         </div>
-        <Card weatherData={weatherData && weatherData}></Card>
+        
+       
+          <Card loading={loading}weatherData={weatherData}>
+        </Card>
+
+        
       </div>
 
     </>

@@ -7,6 +7,9 @@
     margin: 58px 0 0 0;
 }
 
+.hide{
+    display: none;
+}
 #mobileSearch {
     display: none;
 }
