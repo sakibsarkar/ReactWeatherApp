@@ -1,6 +1,47 @@
-.parent{
+.parent {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:90vh ;
+    height: 80vh;
+    margin: 58px 0 0 0;
+}
+
+#mobileSearch {
+    display: none;
+}
+
+@media screen and (max-width: 533px) {
+    #mobileSearch {
+        display: flex;
+    }
+
+    #mobileSearch input {
+        width: 95%;
+    }
+
+    .parent {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:959px) {
+    #mobileSearch {
+        width: 507px;
+        display: flex;
+    }
+
+    #mobileSearch input {
+        width: 86%;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:1120px) {
+
+
+
+
+    .parent {
+        margin: 0;
+    }
 }

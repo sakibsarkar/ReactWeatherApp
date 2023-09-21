@@ -34,8 +34,8 @@ const Card = ({ weatherData }) => {
                         <p className="city">{name}</p>
                     </div>
                     <div className="min-max">
-                        <p><BsArrowUp></BsArrowUp> Max temp - {tempInCelCius(main ? main.temp_max : 273)} <sup>°C</sup> / {tempInFahrenheit(main ? main.temp_max : 273)}<sup>°F</sup></p>
-                        <p><BsArrowDown></BsArrowDown> Min temp - {tempInCelCius(main ? main.temp_min : 273)} <sup>°C</sup> / {tempInFahrenheit(main ? main.temp_min : 273)} <sup>°F</sup></p>
+                        <p><BsArrowUp></BsArrowUp> Max temp - {tempInCelCius(main ? main.temp_max : 273)} <sup>°C</sup> | {tempInFahrenheit(main ? main.temp_max : 273)}<sup>°F</sup></p>
+                        <p><BsArrowDown></BsArrowDown> Min temp - {tempInCelCius(main ? main.temp_min : 273)} <sup>°C</sup> | {tempInFahrenheit(main ? main.temp_min : 273)} <sup>°F</sup></p>
                     </div>
 
                 </div>
@@ -52,7 +52,7 @@ const Card = ({ weatherData }) => {
             </div>
             <div className="wave">
                 <Wave fill="url(#gradient)" options={{
-                    height: 20,
+                    height: 30,
                     amplitude: 40,
                     speed: 0.3,
                     points: 3

@@ -3,11 +3,11 @@ import Card from "./Card/Card";
 import Header from "./Header/Header";
 import toast, { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
+import { FiSearch } from "react-icons/fi";
 
 function App() {
   const [weatherData, setWeatherData] = useState({})
   const [cityName, setCityName] = useState("")
-  const [boolen, setBoolen] = useState(false)
 
   useEffect(() => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=dhaka&appid=4af0a8ed4d6e6271c0d441d472d939c4`)
@@ -119,6 +119,13 @@ function App() {
       <Header myCityWather={myCityWather} HandleChange={HandleChange}></Header>
 
       <div className="parent">
+        <div className="searchBox " id="mobileSearch">
+          <input type="text" id="search" placeholder="seatch your city" onKeyUp={HandleChange} />
+
+          <div className="searchIcon" onClick={myCityWather}>
+            <FiSearch></FiSearch>
+          </div>
+        </div>
         <Card weatherData={weatherData && weatherData}></Card>
       </div>
 
