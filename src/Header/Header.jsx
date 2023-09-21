@@ -1,9 +1,13 @@
 import "./Header.css";
 import { useState } from "react";
+import { BsFacebook, BsGlobe2 } from "react-icons/bs";
 import { FiSearch } from "react-icons/fi";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { RxCross2 } from "react-icons/rx";
 import { TiWeatherWindyCloudy } from "react-icons/ti";
 
 const Header = ({ HandleChange, myCityWather }) => {
+    const [boolen, setBoolen] = useState(false)
     const [url, setUrl] = useState("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png")
     function hover() {
         setUrl("https://i.ibb.co/NmDPbLf/c-Ie5-Mv-Dv-X4-Vc.gif")
@@ -16,16 +20,22 @@ const Header = ({ HandleChange, myCityWather }) => {
 
     setInterval(() => {
         let hour = new Date().getHours()
-       hour =  hour < 10 ? "0" + hour : hour
+        hour = hour < 10 ? "0" + hour : hour
         let minute = new Date().getMinutes()
-        minute =  minute < 10 ? "0" + minute : minute
+        minute = minute < 10 ? "0" + minute : minute
         let second = new Date().getSeconds()
-        second =  second < 10 ? "0" + second : second
+        second = second < 10 ? "0" + second : second
         let currentTime = `${hour} : ${minute} : ${second}`
         // console.log(currentTime)
         setTime(currentTime)
     }, 1000)
 
+    function showLinks() {
+        setBoolen(true)
+    }
+    function hideLinks() {
+        setBoolen(false)
+    }
 
     return (
         <nav>
@@ -45,8 +55,17 @@ const Header = ({ HandleChange, myCityWather }) => {
                     <p>{time}</p>
                 </div>
                 <div className="author">
-                    <a href=""><img src="https://t4.ftcdn.net/jpg/04/10/43/77/360_F_410437733_hdq4Q3QOH9uwh0mcqAhRFzOKfrCR24Ta.jpg" alt="" /></a>
-                    <a href="" className="gitHub" onMouseEnter={hover} onMouseLeave={mouseOut}><img src={url} alt="" /></a>
+                    <div className="linkContainer">
+                        <img onMouseEnter={showLinks} src="https://t4.ftcdn.net/jpg/04/10/43/77/360_F_410437733_hdq4Q3QOH9uwh0mcqAhRFzOKfrCR24Ta.jpg" alt="" />
+                        <div className={boolen ? "links" : "hide"} onMouseLeave={hideLinks}>
+                            <div className="cross" onClick={hideLinks}><RxCross2></RxCross2></div>
+                            <a href="https://www.facebook.com/Lwda.Bc" rel="noreferrer" target="_blank" className="anchorFB"><BsFacebook className="linkIcon"></BsFacebook>Facebook</a>
+                            <a href="https://wa.link/t6vmuf" rel="noreferrer" target="_blank" className="anchorWP"><IoLogoWhatsapp className="linkIcon"></IoLogoWhatsapp>Watsapp</a>
+                            <a href="" rel="noreferrer" target="_blank" className="anchorPF"><BsGlobe2 className="linkIcon"></BsGlobe2>Protfolio</a>
+                        </div>
+
+                    </div>
+                    <a href="https://github.com/sakibsarkar" target="_blank" rel="noreferrer" className="gitHub" onMouseEnter={hover} onMouseLeave={mouseOut}><img src={url} alt="" /></a>
                 </div>
             </div>
         </nav>
