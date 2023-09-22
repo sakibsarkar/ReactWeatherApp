@@ -1,4 +1,5 @@
 import "./Card.css";
+import Loader from "../Loader/Loader";
 import Wave from "react-wavify";
 import { useEffect, useState } from "react";
 import { BsArrowDown, BsArrowUp, BsDropletHalf, BsSpeedometer2, BsThermometerHalf } from "react-icons/bs";
@@ -16,26 +17,15 @@ const Card = ({ weatherData, loading }) => {
     // const tempInCelCius = Math.ceil((main?.temp - 273.15).toFixed(2))
 
     return (
-       
-  <div className="container">
-            {
+
+        <div className="container">
+                 {
                 loading ?
-                    <div className="mrLoader">
-                        <Watch
-                        height="200"
-                        width="200"
-                        radius="48"
-                        color="#f1f1f17a"
-                        ariaLabel="watch-loading"
-                        wrapperStyle={{}}
-                        wrapperClassName=""
-                        visible={true}
-                    />
-                    </div>
+                   <Loader></Loader>
 
                     :
 
-                   <>
+                    <>
                         <div className="top">
                             <div className="left" title="Atmosphere pressure"><p className="icon-center"><BsSpeedometer2></BsSpeedometer2>{main ? main.pressure : 0}hPa</p></div>
                             <div className="mid" title="Wind Speed"><p className="icon-center"><FiWind></FiWind>{wind ? wind.speed : 0} km/h</p></div>
@@ -87,7 +77,7 @@ const Card = ({ weatherData, loading }) => {
 
 
                         </div>
-</>
+                    </>
 
 
 
@@ -95,11 +85,11 @@ const Card = ({ weatherData, loading }) => {
 
 
 
-                  
+
             }
 
-  </div>
-       );
+        </div>
+    );
 };
 
 export default Card;
