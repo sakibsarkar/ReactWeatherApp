@@ -1,8 +1,21 @@
-# React + Vite
+# Weather App
+## Application name : NiceDay
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Link - [NiceDay](https://niceday-weatherapp.netlify.app/)
 
-Currently, two official plugins are available:
+## Library used in this project
+- React ( Vite )
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Packages used in this project 
+- React icon's
+- React Toastify 
+- React wavify
+
+# Feature
+- Response in every Device
+- User's current time display
+- Real time weather info 
+- different city search option
+- Display temperature in both Celsius and Fahrenheit
+- Show the Longitude and Latitude of the city
+- Interective UI
