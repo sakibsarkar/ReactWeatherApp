@@ -14,10 +14,10 @@ function App() {
     setLoading(true)
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=dhaka&appid=4af0a8ed4d6e6271c0d441d472d939c4`)
       .then(res => res.json())
-      .then(data =>{
+      .then(data => {
         setLoading(false)
         setWeatherData(data)
-      
+
       })
 
 
@@ -58,7 +58,7 @@ function App() {
 
           else {
             setLoading(false)
-        setWeatherData(data)
+            setWeatherData(data)
           }
         }
 
@@ -75,7 +75,7 @@ function App() {
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=4af0a8ed4d6e6271c0d441d472d939c4`)
         .then(res => res.json())
         .then(data => {
-          
+
           if (data.cod == 404) {
             setLoading(false)
             toast.error('No city data available on this name !', {
@@ -96,13 +96,13 @@ function App() {
               },
 
               duration: 2000,
-              
+
             });
           }
 
           else {
             setLoading(false)
-        setWeatherData(data)
+            setWeatherData(data)
           }
         })
     }
@@ -133,18 +133,18 @@ function App() {
 
       <div className="parent">
         <div className={loading ? "hide" : "searchBox"} id={loading ? "blah" : "mobileSearch"}>
-          <input type="text" id="search" placeholder="seatch your city" onKeyUp={HandleChange} />
+          <input type="text" id="search" placeholder="search your city" onKeyUp={HandleChange} />
 
           <div className="searchIcon" onClick={myCityWather}>
             <FiSearch></FiSearch>
           </div>
         </div>
-        
-       
-          <Card loading={loading}weatherData={weatherData}>
+
+
+        <Card loading={loading} weatherData={weatherData}>
         </Card>
 
-        
+
       </div>
 
     </>
