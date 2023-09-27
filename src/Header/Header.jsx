@@ -43,7 +43,7 @@ const Header = ({ HandleChange, myCityWather }) => {
                 <h2 title="logo"><TiWeatherWindyCloudy></TiWeatherWindyCloudy>NiceDay</h2>
             </div>
             <div className="searchBox">
-                <input type="text" id="search" placeholder="seatch your city" onKeyUp={HandleChange} />
+                <input type="text" id="search" placeholder="search your city" onKeyUp={HandleChange} />
 
                 <div className="searchIcon" onClick={myCityWather}>
                     <FiSearch></FiSearch>
